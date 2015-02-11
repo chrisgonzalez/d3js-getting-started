@@ -4,14 +4,11 @@
   "description": "Template for file-based sites hosted on dokku",
   "main": "src/index.html",
   "scripts": {
-    "sass": "sass --watch src/css/style.scss:src/css/style.css",
-    "local": "http-server -p 4000",
-    "build": "rm -rf dist; buildify; "
+    "local": "http-server -p 4000"
   },
   "author": "Chris Gonzalez",
   "license": "ISC",
   "dependencies": {
-    "http-server": "^0.7.4",
-    "buildify": "^0.4.0"
+    "http-server": "^0.7.4"
   }
 }
