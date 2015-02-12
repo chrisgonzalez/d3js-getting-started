@@ -50,7 +50,7 @@ function scales(data){
 	//FIRST, LET'S FIND OUR INPUT DOMAINS
 
 		//this uses the above function to return the date and bgl extents
-		var timeExtent = d3.extents(data, function (d) {
+		var timeExtent = d3.extent(data, function (d) {
 			return d.RawMessage.timestamp_ms;
 		})
 
@@ -70,13 +70,8 @@ function scales(data){
 				    	.domain(timeExtent)
 				    	.rangeRound(ranges.dateRange);
 
-		var yScale = d3.scale.linear()
-				    	.domain(domains.dataExtent)
-				    	.rangeRound(ranges.dataRange);
-
 		return {
-			x: xScale,
-			y: yScale
+			x: xScale
 		}
 }
 
