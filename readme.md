@@ -14,13 +14,13 @@ tweets.
 
 ### SOME LINKS:
 
-On Data Joins:
+On Data Joins:  
 http://bost.ocks.org/mike/join/  
 
-Selections:
+Selections:  
 http://bost.ocks.org/mike/selection/  
 
-Update Patterns (Parts 1, 2 and 3):
-http://bl.ocks.org/mbostock/3808218
-http://bl.ocks.org/mbostock/3808221
-http://bl.ocks.org/mbostock/3808234
+Update Patterns (Parts 1, 2 and 3):  
+http://bl.ocks.org/mbostock/3808218  
+http://bl.ocks.org/mbostock/3808221  
+http://bl.ocks.org/mbostock/3808234  
