@@ -1,3 +1,69 @@
 // STARTER SASS FILE //
 
 /* STARTER CSS FILE */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.viz2 {
+    background: #ccc;
+}
+
+
+.tweet {
+    width: 25%;
+    height: auto;
+    border: 1px solid #000;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+
+    -webkit-transition: width .4s ease-in-out 1.4s, -webkit-transform .3s;
+
+    &.collapsed {
+        width: 5%;
+
+        .avatar {
+            -webkit-transform: scale(0.01);
+            opacity: 0;
+        }
+
+        .text {
+            max-width: 0%;
+        }
+    }
+
+    &.updated {
+        -webkit-transform: rotateY(360deg);
+        -webkit-transition: none;
+    }
+
+    .avatar {
+        background-size: cover;
+        background-position: center center;
+        width: 20%;
+        padding-top: 20%;
+        border-radius: 10em;
+        display:inline-block;
+        vertical-align: top;
+        opacity: 1;
+
+        -webkit-transition: -webkit-transform .4s ease-in-out 1s;
+    }
+
+    .text {
+        width: 80%;
+        display:inline-block;
+        vertical-align: top;
+        padding: 0 1em;
+        overflow: hidden;
+        max-width: 80%;
+    }
+}
